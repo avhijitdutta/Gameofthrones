@@ -1,0 +1,15 @@
+<app-nav-header [title]="title"> </app-nav-header>
+<table class="table">
+<thead class="thead-light">
+    <tr>
+      <th>Name</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-light" *ngFor="let item of houseList" (click)="detail(item)">
+      <td>{{item.name}}</td>
+      <td>{{item.region}}</td>
+    </tr>
+  </tbody>
+</table>
