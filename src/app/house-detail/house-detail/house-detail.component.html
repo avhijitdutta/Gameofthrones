@@ -1,7 +1,7 @@
 <app-nav-header [title]="title"> </app-nav-header>
 <div class="jumbotron">
     <h1>{{detail.name}}</h1>
-    <p>{{detail.region}}</p>
-    <p>{{detail.coatOfArms}}</p>
-    <p>{{detail.words}}</p>
+    <p *ngIf="detail.region"> <b>Region - </b>{{detail.region}}</p>
+    <p *ngIf="detail.coatOfArms"><b>Coat of arms -</b> {{detail.coatOfArms}}</p>
+    <p *ngIf="detail.words"> <b>Words -</b> {{detail.words}}</p>
 </div>
